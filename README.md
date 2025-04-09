@@ -69,7 +69,7 @@ Este repositório serve como material de estudo e consulta para desenvolvedores 
 1. Clone o repositório:
    ```bash
    git clone git@github.com:DaniloTakeo/design_patterns_structural.git
-2. Importe no seu IDE preferido (IntelliJ, Ecli2pse etc.)
+2. Importe no seu IDE preferido (IntelliJ, Eclipse etc.)
 
 3. Navegue até o diretório do padrão que deseja testar
 
