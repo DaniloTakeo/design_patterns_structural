@@ -40,6 +40,20 @@ Design Patterns (Padrões de Projeto) são soluções reutilizáveis para proble
 
 ---
 
+### 3. Composite Pattern
+
+#### ✔️ Exemplos:
+
+- **Sistema de arquivos (pastas e arquivos)**  
+  Demonstra composição de objetos simples e compostos para formar uma estrutura em árvore.
+
+- **Sistema de menus de interface gráfica (menus e itens de menu)**  
+  Mostra como construir hierarquias de menus tratáveis de forma uniforme.
+
+📁 Caminho: `src/composite/`
+
+---
+
 ## 📌 Objetivo
 
 Este repositório serve como material de estudo e consulta para desenvolvedores que desejam:
