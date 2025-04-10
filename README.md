@@ -54,6 +54,20 @@ Design Patterns (Padrões de Projeto) são soluções reutilizáveis para proble
 
 ---
 
+### 4. Decorator Pattern
+
+#### ✔️ Exemplos:
+
+- **Cafeteria com bebidas e complementos (leite, chocolate, etc.)**  
+  Permite adicionar funcionalidades (ingredientes) dinamicamente a uma bebida sem modificar a classe original.
+
+- **Sistema de notificações com múltiplos canais (Email, SMS, Log)**  
+  Permite encadear dinamicamente notificações por diferentes meios de envio.
+
+📁 Caminho: `src/decorator/`
+
+---
+
 ## 📌 Objetivo
 
 Este repositório serve como material de estudo e consulta para desenvolvedores que desejam:
