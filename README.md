@@ -68,6 +68,33 @@ Design Patterns (Padrões de Projeto) são soluções reutilizáveis para proble
 
 ---
 
+### 5. Facade Pattern
+
+O **Facade Pattern** fornece uma interface unificada e simplificada para um conjunto de interfaces em um subsistema. Ele oculta a complexidade do sistema e provê uma maneira mais simples para os clientes interagirem com ele.
+
+#### ✅ Exemplos implementados:
+
+1. **Sistema de Home Theater**  
+   A classe `HomeTheaterFacade` encapsula as operações necessárias para assistir a um filme, coordenando DVD player, projetor, som e luzes com métodos como `assistirFilme()` e `encerrarSessao()`.
+
+   **Classes principais:**
+   - `DVDPlayer`, `Projetor`, `Luzes`, `Som`
+   - `HomeTheaterFacade`
+   - `CinemaApp` (cliente)
+
+2. **Processamento de Pedidos no E-commerce**  
+   A classe `PedidoService` age como fachada para processar pedidos, escondendo as chamadas diretas para os serviços de estoque, pagamento, nota fiscal e e-mail.
+
+   **Classes principais:**
+   - `Produto`
+   - `EstoqueService`, `PagamentoService`, `NotaFiscalService`, `EmailService`
+   - `PedidoService`
+   - `AppEcommerce` (cliente)
+
+📁 Caminho: `src/facade/`
+
+---
+
 ## 📌 Objetivo
 
 Este repositório serve como material de estudo e consulta para desenvolvedores que desejam:
