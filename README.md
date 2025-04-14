@@ -95,6 +95,34 @@ O **Facade Pattern** fornece uma interface unificada e simplificada para um conj
 
 ---
 
+### 6. Flyweight Pattern
+
+O **Flyweight Pattern** é utilizado para reduzir o uso de memória compartilhando o máximo de dados possíveis entre objetos semelhantes. Ele separa os dados **intrínsecos** (compartilhados) dos **extrínsecos** (variáveis), ideal para sistemas com muitos objetos similares.
+
+#### ✅ Exemplos implementados:
+
+1. **Editor de Texto**  
+   O editor reutiliza objetos de `Caractere` para cada símbolo digitado, compartilhando a fonte e o símbolo entre as instâncias, enquanto a posição (x, y) é variável.
+
+   **Classes principais:**
+   - `Caractere` (interface)
+   - `CaractereConcreto` (implementação compartilhada)
+   - `CaractereFactory` (fábrica que gerencia os objetos)
+   - `EditorTexto` (cliente)
+
+2. **Ícones de Mapa**  
+   Um sistema de mapa exibe milhares de marcadores com tipos repetidos, como restaurantes e postos de gasolina. Com o padrão Flyweight, reutilizamos objetos `Icone` para cada tipo, exibindo-os em coordenadas diferentes.
+
+   **Classes principais:**
+   - `Icone` (interface)
+   - `IconeConcreto` (implementação compartilhada com imagem simulada)
+   - `IconeFactory` (fábrica de ícones)
+   - `MapaApp` (cliente)
+
+📁 Caminho: `src/flyweight`
+
+---
+
 ## 📌 Objetivo
 
 Este repositório serve como material de estudo e consulta para desenvolvedores que desejam:
