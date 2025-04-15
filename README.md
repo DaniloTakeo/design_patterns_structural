@@ -119,7 +119,35 @@ O **Flyweight Pattern** é utilizado para reduzir o uso de memória compartilhan
    - `IconeFactory` (fábrica de ícones)
    - `MapaApp` (cliente)
 
-📁 Caminho: `src/flyweight`
+📁 Caminho: `src/flyweight/`
+
+---
+
+### 7. Proxy Pattern
+
+O **Proxy Pattern** fornece um objeto substituto que controla o acesso a outro objeto. Ele pode ser usado para adicionar comportamento como **lazy loading**, **controle de acesso**, **logging**, **cache**, entre outros.
+
+#### ✅ Exemplos implementados:
+
+1. **Visualizador de Imagens (Virtual Proxy)**  
+   O proxy adia o carregamento de uma imagem pesada (`ImagemReal`) até o momento em que ela realmente precisa ser exibida.
+
+   **Classes principais:**
+   - `Imagem` (interface)
+   - `ImagemReal` (classe real que carrega a imagem)
+   - `ImagemProxy` (proxy que adia o carregamento)
+   - `GaleriaApp` (cliente)
+
+2. **Controle de Acesso a Arquivos (Protection Proxy)**  
+   O proxy verifica o nível de permissão do usuário antes de permitir o acesso ao conteúdo de um arquivo.
+
+   **Classes principais:**
+   - `Arquivo` (interface)
+   - `ArquivoReal` (classe real que lê o arquivo)
+   - `ArquivoProxy` (proxy que valida permissões)
+   - `SistemaArquivosApp` (cliente)
+  
+📁 Caminho: `src/proxy/`
 
 ---
 
